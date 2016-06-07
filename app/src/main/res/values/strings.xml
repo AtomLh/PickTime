@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PickTime</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="slogn">Emoji your day</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_entries_fragment">entries</string>
+    <string name="title_stats_fragment">stats</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_add_entries_activity">add_entries_activity</string>
+</resources>
