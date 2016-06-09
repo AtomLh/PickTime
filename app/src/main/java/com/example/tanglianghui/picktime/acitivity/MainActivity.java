@@ -1,4 +1,4 @@
-package com.example.tanglianghui.picktime;
+package com.example.tanglianghui.picktime.acitivity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,7 +17,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toast;
+
+import com.example.tanglianghui.picktime.R;
+import com.example.tanglianghui.picktime.fragment.entriesFragment;
 
 import java.util.ArrayList;
 import java.util.List;
