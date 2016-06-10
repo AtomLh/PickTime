@@ -20,6 +20,7 @@ public class add_entries_detail extends AppCompatActivity {
     private EditText  note_et;
     int emoji;  //emoji的图片
     String date;
+    StringBuffer activities = new StringBuffer();
     int emoji_text;  //emoji的文字
     private ImageButton imageButton;
     Dairy dairy = new Dairy();
@@ -55,7 +56,7 @@ public class add_entries_detail extends AppCompatActivity {
             @Override
             public void onClick(View v) {
               note = note_et.getText().toString();
-                StringBuffer activities = new StringBuffer();
+
                 if (coding_cb.isChecked()){
                    activities.append("*coding ");
                 }
