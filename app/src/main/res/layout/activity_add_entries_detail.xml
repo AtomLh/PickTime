@@ -128,12 +128,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <EditText
+            android:id="@+id/note_et"
             android:textSize="30dp"
             android:hint="@string/add_note"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </android.support.design.widget.TextInputLayout>
 <Button
+    android:id="@+id/save_btn"
     android:textColor="#ffffff"
     android:text="@string/save"
     android:background="@color/colorPrimary"

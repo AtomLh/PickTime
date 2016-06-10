@@ -6,8 +6,30 @@ package com.example.tanglianghui.picktime.model;
 public class Dairy {
     private int id;
     private String date;
+    private String activities;
     private int emoji;
+    private int emoji_text;
     private String descri;
+
+    public void setEmoji_text(int emoji_text) {
+        this.emoji_text = emoji_text;
+    }
+
+    public int getEmoji_text() {
+
+        return emoji_text;
+    }
+
+    public void setActivities(String activities) {
+        this.activities = activities;
+    }
+
+    public String getActivities() {
+
+        return activities;
+    }
+
+
 
     public String getDate() {
         return date;

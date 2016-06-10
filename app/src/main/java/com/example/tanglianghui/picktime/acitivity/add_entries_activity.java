@@ -51,22 +51,27 @@ public class add_entries_activity extends AppCompatActivity implements View.OnCl
         awful_btn.setBackground(getDrawable(R.drawable.awful_unselect));
         switch (v.getId()){
             case R.id.rad_btn:
+                intent.putExtra("emoji_text",R.string.emoji_rad);
                 intent.putExtra("emoji",R.drawable.rad_selected);
                 v.setBackground(getDrawable(R.drawable.rad_selected));
                 break;
             case R.id.good_btn:
+                intent.putExtra("emoji_text",R.string.emoji_good);
                 intent.putExtra("emoji",R.drawable.good_selected);
                 v.setBackground(getDrawable(R.drawable.good_selected));
                 break;
             case R.id.meh_btn:
+                intent.putExtra("emoji_text",R.string.emoji_meh);
                 intent.putExtra("emoji",R.drawable.meh_selected);
                 v.setBackground(getDrawable(R.drawable.meh_selected));
                 break;
             case R.id.fugly_btn:
+                intent.putExtra("emoji_text",R.string.emoji_fugly);
                 intent.putExtra("emoji",R.drawable.fugly_selected);
                 v.setBackground(getDrawable(R.drawable.fugly_selected));
                 break;
             case R.id.awful_btn:
+                intent.putExtra("emoji_text",R.string.emoji_awful);
                 intent.putExtra("emoji",R.drawable.awful_selected);
                 v.setBackground(getDrawable(R.drawable.awful_selected));
                 break;
