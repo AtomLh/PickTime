@@ -14,6 +14,7 @@
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -22,10 +23,15 @@
             android:label="@string/title_activity_add_entries_activity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
-                <action android:name="add.activity.start"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="add.activity.start" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".acitivity.add_entries_detail"
+            android:label="@string/title_activity_add_entries_detail"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
