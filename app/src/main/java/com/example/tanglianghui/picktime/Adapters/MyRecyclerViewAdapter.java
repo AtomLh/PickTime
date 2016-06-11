@@ -35,7 +35,7 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyViewHolder> {
          holder.date_tv.setText(dairy.getDate());
          holder.descri_tv.setText(dairy.getDescri());
          holder.emoji_tv.setText(dairy.getEmoji_text());
-
+         holder.activities_tv.setText(dairy.getActivities());
     }
 
     @Override

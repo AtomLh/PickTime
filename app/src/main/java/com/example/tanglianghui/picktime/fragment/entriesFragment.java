@@ -2,6 +2,7 @@ package com.example.tanglianghui.picktime.fragment;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,6 +24,7 @@ public class entriesFragment extends Fragment {
         View view =  inflater.inflate(R.layout.fragment_entries, container, false);
         recyclerView = (RecyclerView) view.findViewById(R.id.recycleView);
         recyclerView.setHasFixedSize(true);
+         recyclerView.setLayoutManager(new LinearLayoutManager(container.getContext()));
          myDate = DairyDB.getInstance(container.getContext()).loadDairies();
         recyclerView.setAdapter(new MyRecyclerViewAdapter(R.layout.entries_item,myDate));
         return view;

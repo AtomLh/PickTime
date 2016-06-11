@@ -17,7 +17,7 @@ public class DairyOpenHelper extends SQLiteOpenHelper {
             +"emoji_mark integer, "
             +"activities text, "
             +"emoji_text integer,"
-            +"descri   text)";
+            +"descri text)";
 
     public DairyOpenHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);

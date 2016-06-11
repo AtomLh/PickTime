@@ -43,37 +43,37 @@ public class add_entries_activity extends AppCompatActivity implements View.OnCl
     @Override
     public void onClick(View v) {
         Intent intent = new Intent(this,add_entries_detail.class);
-        intent.putExtra("date", date_tv.toString());
-        rad_btn.setBackground(getDrawable(R.drawable.rad_unselect));
-        good_btn.setBackground(getDrawable(R.drawable.good_unselect));
-        meh_btn.setBackground(getDrawable(R.drawable.meh_unselect));
-        fugly_btn.setBackground(getDrawable(R.drawable.fugly_unselect));
-        awful_btn.setBackground(getDrawable(R.drawable.awful_unselect));
+        intent.putExtra("date", date_tv.getText().toString());
+        rad_btn.setBackgroundResource(R.drawable.rad_unselect);
+        good_btn.setBackgroundResource(R.drawable.good_unselect);
+        meh_btn.setBackgroundResource(R.drawable.meh_unselect);
+        fugly_btn.setBackgroundResource(R.drawable.fugly_unselect);
+        awful_btn.setBackgroundResource(R.drawable.awful_unselect);
         switch (v.getId()){
             case R.id.rad_btn:
                 intent.putExtra("emoji_text",R.string.emoji_rad);
-                intent.putExtra("emoji",R.drawable.rad_selected);
-                v.setBackground(getDrawable(R.drawable.rad_selected));
+                intent.putExtra("emoji", R.drawable.rad_selected);
+                v.setBackgroundResource(R.drawable.rad_selected);
                 break;
             case R.id.good_btn:
                 intent.putExtra("emoji_text",R.string.emoji_good);
-                intent.putExtra("emoji",R.drawable.good_selected);
-                v.setBackground(getDrawable(R.drawable.good_selected));
+                intent.putExtra("emoji", R.drawable.good_selected);
+                v.setBackgroundResource(R.drawable.good_selected);
                 break;
             case R.id.meh_btn:
                 intent.putExtra("emoji_text",R.string.emoji_meh);
-                intent.putExtra("emoji",R.drawable.meh_selected);
-                v.setBackground(getDrawable(R.drawable.meh_selected));
+                intent.putExtra("emoji", R.drawable.meh_selected);
+                v.setBackgroundResource(R.drawable.meh_selected);
                 break;
             case R.id.fugly_btn:
                 intent.putExtra("emoji_text",R.string.emoji_fugly);
-                intent.putExtra("emoji",R.drawable.fugly_selected);
-                v.setBackground(getDrawable(R.drawable.fugly_selected));
+                intent.putExtra("emoji", R.drawable.fugly_selected);
+                v.setBackgroundResource(R.drawable.fugly_selected);
                 break;
             case R.id.awful_btn:
                 intent.putExtra("emoji_text",R.string.emoji_awful);
                 intent.putExtra("emoji",R.drawable.awful_selected);
-                v.setBackground(getDrawable(R.drawable.awful_selected));
+                v.setBackgroundResource(R.drawable.awful_selected);
                 break;
             default:
                 break;
